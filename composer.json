@@ -1,0 +1,86 @@
+{
+    "name": "wzul/blog-wanzul",
+    "description": "A template for installing and running WordPress on Heroku",
+    "homepage": "https://github.com/wzul/blog-wanzul",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wan Zulkarnain",
+            "email": "wanzulkarnain69@gmail.com",
+            "homepage": "http://wanzul.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ext-gd": "*",
+        "ext-mbstring": "*",
+        "php": "~7.1.0",
+
+        "WordPress/WordPress": "*",
+
+        "automattic/batcache": "dev-master",
+        "wpackagist-plugin/redis-cache": "~1",
+        "wpackagist-plugin/secure-db-connection": "~1",
+
+        "humanmade/s3-uploads": "~1",
+        "wpackagist-plugin/authy-two-factor-authentication": "~3",
+        "wpackagist-plugin/jetpack": "~5",
+        "wpackagist-plugin/sendgrid-email-delivery-simplified": "~1",
+		"wpackagist-theme/vw-kids":"0.3.6",
+		"wpackagist-theme/agency-ecommerce":"2.0.10",
+		"wpackagist-theme/newshop-ecommerce":"0.3",
+        "predis/predis": "~1.0",
+        "wp-cli/wp-cli": "^1.0",
+
+        "wpackagist-plugin/billplz-for-woocommerce": "dev-trunk",
+        "wzul/billplz-for-givewp" : "*"
+    },
+    "suggest": {
+        "wpackagist-plugin/cloudflare-cache-purge": "Purges cached pages on CF.",
+        "trepmal/wp-revisions-cli": "WP CLI tool for cleaning up revisions (dev-master)"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "WordPress/WordPress",
+                "version": "4.9.2",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.9.2.zip"
+                }
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/xyu/batcache"
+        },
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-cli.org/package-index"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/wzul/Billplz-for-GiveWP.git"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "vendor/WordPress/WordPress/wp-content/mu-plugins/{$name}/": [
+                "automattic/batcache",
+                "wpackagist-plugin/redis-cache",
+                "wpackagist-plugin/secure-db-connection"
+            ],
+            "vendor/WordPress/WordPress/wp-content/plugins/{$name}/": [ "type:wordpress-plugin" ],
+            "vendor/WordPress/WordPress/wp-content/themes/{$name}/": [ "type:wordpress-theme" ]
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [ "chmod +x ./support/app_slug_compile.sh && ./support/app_slug_compile.sh" ]
+    }
+
+}
