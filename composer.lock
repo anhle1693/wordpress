@@ -1,19 +1,17 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed8bd53fe8d9af0e3a62c06bb7e71025",
+    "content-hash": "c104cdcb014e75a73e79ba854c053b89",
     "packages": [
         {
             "name": "WordPress/WordPress",
             "version": "4.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/4.9.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/WordPress/WordPress/archive/4.9.2.zip"
             },
             "type": "library"
         },
@@ -801,6 +799,7 @@
                 "array_column",
                 "column"
             ],
+            "abandoned": true,
             "time": "2015-03-20T22:07:39+00:00"
         },
         {
@@ -1182,16 +1181,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.4",
+            "version": "v3.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "4b2717ee2499390e371e1fc7abaf886c1c83e83d"
+                "reference": "0ea4d39ca82409a25a43b61ce828048a90000920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/4b2717ee2499390e371e1fc7abaf886c1c83e83d",
-                "reference": "4b2717ee2499390e371e1fc7abaf886c1c83e83d",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/0ea4d39ca82409a25a43b61ce828048a90000920",
+                "reference": "0ea4d39ca82409a25a43b61ce828048a90000920",
                 "shasum": ""
             },
             "require": {
@@ -1249,7 +1248,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-29T09:16:57+00:00"
+            "time": "2019-11-08T16:18:30+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3026,6 +3025,7 @@
                     "server-command.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3038,10 +3038,6 @@
             ],
             "description": "Launches PHP's built-in web server for a specific WordPress installation.",
             "homepage": "https://github.com/wp-cli/server-command",
-            "support": {
-                "issues": "https://github.com/wp-cli/server-command/issues",
-                "source": "https://github.com/wp-cli/server-command/tree/master"
-            },
             "time": "2017-12-14T20:06:24+00:00"
         },
         {
@@ -3365,9 +3361,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/authy-two-factor-authentication.3.0.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/authy-two-factor-authentication.3.0.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3385,16 +3379,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/billplz-for-woocommerce.zip?timestamp=1508377177",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/billplz-for-woocommerce.zip?timestamp=1568882199"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/billplz-for-woocommerce/",
-            "time": "2017-10-19T02:39:37+00:00"
+            "time": "2019-09-19T08:36:39+00:00"
         },
         {
             "name": "wpackagist-plugin/jetpack",
@@ -3406,9 +3398,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.5.7.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/jetpack.5.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3426,9 +3416,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redis-cache.1.3.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/redis-cache.1.3.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3446,9 +3434,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/secure-db-connection.1.1.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/secure-db-connection.1.1.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3462,13 +3448,11 @@
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sendgrid-email-delivery-simplified/",
-                "reference": "trunk"
+                "reference": "tags/1.11.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sendgrid-email-delivery-simplified.zip?timestamp=1503913160",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/sendgrid-email-delivery-simplified.1.11.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3477,16 +3461,70 @@
             "homepage": "https://wordpress.org/plugins/sendgrid-email-delivery-simplified/"
         },
         {
+            "name": "wpackagist-theme/agency-ecommerce",
+            "version": "2.0.10",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/agency-ecommerce/",
+                "reference": "2.0.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/agency-ecommerce.2.0.10.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/agency-ecommerce/"
+        },
+        {
+            "name": "wpackagist-theme/newshop-ecommerce",
+            "version": "0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/newshop-ecommerce/",
+                "reference": "0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/newshop-ecommerce.0.3.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/newshop-ecommerce/"
+        },
+        {
+            "name": "wpackagist-theme/vw-kids",
+            "version": "0.3.6",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/vw-kids/",
+                "reference": "0.3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/vw-kids.0.3.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/vw-kids/"
+        },
+        {
             "name": "wzul/billplz-for-givewp",
             "version": "3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/billplzplugin/Billplz-for-GiveWP.git",
+                "url": "https://github.com/Billplz/Billplz-for-GiveWP.git",
                 "reference": "d566e3792bd58fc24196579d4c6628599c00241d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/billplzplugin/Billplz-for-GiveWP/zipball/d566e3792bd58fc24196579d4c6628599c00241d",
+                "url": "https://api.github.com/repos/Billplz/Billplz-for-GiveWP/zipball/d566e3792bd58fc24196579d4c6628599c00241d",
                 "reference": "d566e3792bd58fc24196579d4c6628599c00241d",
                 "shasum": ""
             },
